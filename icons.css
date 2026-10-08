@@ -1,0 +1,19 @@
+/* Icons inherit their link or button colour. */
+.site-icon { display: inline-block; width: 1.25rem; height: 1.25rem; flex: 0 0 1.25rem; vertical-align: middle; }
+.icon-link { display: inline-flex; align-items: center; justify-content: center; gap: .625rem; }
+.icon-link > span { min-width: 0; }
+.contact-list { display: grid; gap: 1.25rem; }
+.contact-row { display: flex; align-items: flex-start; gap: 1rem; min-width: 0; }
+.contact-row > div:last-child { min-width: 0; }
+.contact-icon { display: flex; align-items: center; justify-content: center; flex: 0 0 2.5rem; width: 2.5rem; height: 2.5rem; border-radius: .5rem; background: #1c6a0d12; color: #1c6a0d; }
+.contact-label { font-family: Inter, sans-serif; font-size: .8125rem; font-weight: 600; margin-bottom: .25rem; }
+.contact-value { font-size: .875rem; line-height: 1.65; overflow-wrap: anywhere; }
+.contact-phones { display: flex; flex-wrap: wrap; align-items: center; gap: .25rem .75rem; }
+.footer-contact { display: grid; gap: 1rem; }
+.footer-contact-row { display: flex; align-items: flex-start; gap: .75rem; min-width: 0; }
+.footer-contact-row > .site-icon { margin-top: .125rem; color: #1c6a0d; }
+@media (min-width: 640px) { .footer-contact { grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 1.25rem 2rem; } }
+
+.enquiry-faq summary { line-height: 1.5; }
+.enquiry-faq summary::marker { color: #1c6a0d; }
+.enquiry-faq[open] summary { color: #1c6a0d; }
